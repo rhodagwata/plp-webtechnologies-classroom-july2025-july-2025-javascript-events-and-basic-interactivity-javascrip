@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Interactive Web Page with JavaScript</h1>
+
+  <!--  Event Handling -->
+  <button id="toggleMessageBtn">Toggle Message</button>
+  <p id="message" style="display:none;">Hello! You just clicked a button 🎉</p>
+
+  <!--Interactive Elements -->
+  <section>
+    <h2>Light/Dark Mode Toggle</h2>
+    <button id="modeToggle">Switch to Dark Mode</button>
+  </section>
+
+  <section>
+    <h2>Counter Game</h2>
+    <button id="incrementBtn">Increase</button>
+    <button id="decrementBtn">Decrease</button>
+    <p>Counter: <span id="counter">0</span></p>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br><br>
+
+      <label>Email: <input type="text" id="email"></label>
+      <span class="error" id="emailError"></span><br><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <span class="error" id="passwordError"></span><br><br>
+
+      <button type="submit">Submit</button>
+      <p id="successMessage" style="color:green; display:none;">Form submitted successfully ✅</p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
